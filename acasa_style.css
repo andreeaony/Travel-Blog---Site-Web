@@ -1,0 +1,401 @@
+header
+{
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: xx-large;
+    text-decoration: underline;
+    background-color: rgb(255, 214, 111);
+    color: rgb(126, 35, 35);
+    padding: 0.3cm;
+    width: 90%;
+    margin: 0 auto;
+    border: 0.2cm;
+    border-color: rgb(91, 29, 29);
+    border-style: solid;
+}
+
+body
+{
+    font-family: Verdana;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    padding: 0cm;
+    color: rgb(73, 20, 0);
+    background-color: rgb(255, 229, 113);
+    width: fit-content;
+    font-size: xx-large;
+}
+
+footer
+{
+    font-size: x-small;
+    font-style: oblique;
+}
+
+/*MENIU*/
+.buton_meniu 
+{
+    background-color: rgb(126, 35, 35);
+    color: white;
+    font-size: x-large;
+    font-style: oblique;
+    border: 0.1cm;
+    border-color: rgb(91, 29, 29);
+    border-style: solid;
+    padding-inline: 360px 20px;
+    height:1.5cm;
+    width: 100%;
+    margin: 0 auto;
+}
+.meniu_dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+.meniu_dropdown_content 
+{
+    display: none;
+    position: absolute;
+    background-color:rgb(249, 231, 213);
+    font-size:large;
+    text-decoration: double underline;
+    font-weight: bold;
+    text-decoration-color: rgb(91, 29, 29);
+    color: rgb(255, 229, 113);
+    padding: 0.3cm;
+}
+.meniu_dropdown_content a 
+{
+    display: block;
+    color: rgb(126, 35, 35);
+    padding: 0.7cm;
+}
+.meniu_dropdown_content a:hover 
+{
+    background-color: brown;
+    color:bisque;
+}
+.meniu_dropdown:hover .meniu_dropdown_content 
+{
+    display: block;
+}
+
+/*BARA LATERALA*/
+.bara_laterala 
+{
+    width: 100px;
+    background-color: rgb(249, 231, 213);
+    color: rgb(126, 35, 35);
+    font-family: Impact;
+    font-size: large;
+    padding: 20px;
+    position: absolute;
+    top: 0cm;
+    right: 10em;
+    border: 0.1cm;
+    border-top: 0cm;
+    border-color: rgb(91, 29, 29);
+    border-style: solid;
+    border-radius: 15px;
+}
+
+/*SALUT ANIMAT*/
+@keyframes animatie
+{
+    0%
+    {
+        transform: rotate(360deg);
+        color:rgb(126, 35, 35);
+        background-color: rgb(255, 214, 111);
+        border-color: rgb(126, 35, 35);
+        text-decoration: underline;
+    }
+    50%
+    {
+        transform: rotate(360deg);
+        color:rgb(249, 231, 213);
+        background-color: rgb(126, 35, 35);
+        border-color: rgb(98, 37, 30);
+        text-decoration: underline;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        color:rgb(126, 35, 35);
+        background-color:rgb(255, 214, 111);
+        border-color: rgb(126, 35, 35);
+        text-decoration: underline;
+    }
+}
+.salut_animat
+{
+    font-family:'Times New Roman';
+    font-weight: bold;
+    font-size: x-large;
+    color:rgb(249, 231, 213);
+    background-color: rgb(126, 35, 35);
+    border: 0.1cm;
+    border-color: rgb(91, 29, 29);
+    border-style:solid;
+    border-radius:15px;
+    width:20em;
+    height:fit-content;
+    margin-left: 450px;
+    margin-top:75px;
+    padding:0.5em;
+    animation: animatie 5s infinite;
+}
+
+/*TEXT MAIN*/
+.navigare_intro
+{
+    background-color: rgb(126, 35, 35);
+    margin-top: 1em;
+    padding: 0.5em;
+    text-align: center;
+    border-color:rgb(73, 20, 0);
+    border-style: solid;
+    color: rgb(249, 231, 213);
+    border-radius:15px;
+}
+.navigare_intro p a
+{
+    color: rgb(249, 231, 213);
+    font-family:'Gill Sans';
+    font-size:larger;
+}
+.navigare_intro p a:hover
+{
+    color: brown;
+    font-family: 'Gill Sans';
+    font-size:larger;
+    background-color: rgb(255, 229, 113);
+}
+
+#pasiune
+{
+    background-color:rgb(255, 214, 111);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:larger;
+    font-style:oblique;
+    padding:0.2em;
+    margin-top: 0.5cm;
+}
+
+#motive_de_urmarire
+{
+    font-family:Tahoma;
+    font-size:larger;
+    padding:1em;
+    text-align: center;
+}
+.image1 img
+{
+    border-radius:20px;
+}
+
+#detalii
+{
+    background-color: rgb(126, 35, 35);
+    color: rgb(249, 231, 213);
+    font-family:'Segoe UI';
+    font-weight: bold;
+    font-style: italic;
+    margin-top:0.2cm;
+    padding:0.2em;
+    padding-left:1em;
+    border-radius:20px;
+}
+#detalii ul li a
+{
+    color:rgb(249, 231, 213);
+    font-weight: bold;
+    text-decoration: none;
+}
+#detalii ul li a:hover
+{
+    background-color: rgb(255, 229, 113);
+    color:brown;
+}
+
+.image2 img
+{
+    width:100%;
+    height: 12cm;
+    transition: height 3s;
+}
+.image2 img:hover
+{
+    height:8cm;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 600px) 
+{
+    /* TELEFON RESPONSIVE*/
+    nav ul 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li 
+    {
+        display: block; 
+        text-align: center; 
+        margin-bottom: 10px; 
+    }
+    nav ul li a 
+    {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        background-color: rgb(126, 35, 35);
+        border-radius: 5px;
+    }
+    .bara_laterala 
+    {
+        display: none;
+    }
+    .salut_animat 
+    {
+        width: 70%; 
+        margin-left: 4em;
+        margin-right: auto; 
+        position: relative;
+    }
+    .meniu_dropdown_content
+    {
+        z-index: 1; 
+    }
+}
+
+/*TABLETA RESPONSIVE*/
+@media screen and (min-width: 600px) and (max-width: 1048px) 
+{
+    .bara_laterala 
+    {
+        display: none;
+    }
+    .salut_animat 
+    {
+        width: 90%; 
+        margin-left: 0.5em;
+        margin-right: auto; 
+        position: relative;
+    }
+    .meniu_dropdown_content
+    {
+        z-index: 1; 
+    }
+    header {
+        font-size: large; 
+    }
+
+    .buton_meniu {
+        font-size: large; 
+    }
+}
+
+/*DESKTOP RESPONSIVE*/
+@media screen and (min-width: 768px) 
+{
+    body
+    {
+        font-size:large;
+        max-width: 100%;
+    }
+}
+
+form 
+{
+    padding: 20px;
+    background-color:rgb(255, 214, 111);
+}
+
+.trimite-nota
+{
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: rgb(126, 35, 35); 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.nota-input
+{
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: rgb(126, 35, 35);
+    color: white;
+    border-radius: 5px;
+    width: 20em;
+}
+.nota-container p
+{
+    background-color: rgb(255, 214, 111);
+}
+
+.navigare_intro .logat
+{
+    background-color: rgb(108, 31, 31);
+    color:rgb(249, 231, 213);
+    border-radius: 20em;
+    padding: 0.3em;
+    font-family: Georgia, 'Times New Roman';
+}
+
+.navigare_intro .logat #logout-button
+{
+    background-color: rgb(255, 214, 111);
+    color: rgb(108, 31, 31);
+    font-size: large;
+    font-weight: bold;
+    border-radius: 3em;
+}
+
+#login-form 
+{
+    background-color: rgb(255, 214, 111);
+    border-radius: 8px;
+    padding: 20px;
+    width: auto;
+    margin: auto;
+}
+
+#login-form input[type="text"],
+input[type="password"] 
+{
+    width: 20em;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+button 
+{
+    background-color: rgb(108, 31, 31);
+    color: rgb(249, 231, 213);
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+}
+
+button:hover 
+{
+    background-color: rgb(73, 20, 0);
+}
+.login 
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login img 
+{
+    width: 40em;
+    height: auto;
+    border-radius: 8px;
+}

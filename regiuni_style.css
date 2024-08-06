@@ -1,0 +1,419 @@
+header
+{
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: xx-large;
+    text-decoration: underline;
+    background-color: rgb(96, 126, 186);
+    color: rgb(13, 13, 60);
+    padding: 0.3cm;
+    width: 100%;
+    border: 0.2cm;
+    border-color: rgb(17, 66, 106);
+    border-style: solid;
+}
+
+body
+{
+    font-family: Verdana;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    padding: 0cm;
+    color: rgb(10, 31, 39);
+    background-color: rgb(78, 137, 148);
+    width: fit-content;
+}
+
+footer
+{
+    font-size: x-small;
+    font-style: oblique;
+}
+
+/*MENIU*/
+.buton_meniu 
+{
+    background-color: rgb(10, 31, 39);
+    color: rgb(113, 255, 215);
+    font-size: x-large;
+    font-style: oblique;
+    border: 0.1cm;
+    border-color: rgb(20, 20, 88);
+    border-style: solid;
+    padding-inline: 360px 20px;
+    height:1cm;
+}
+.meniu_dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+.meniu_dropdown_content 
+{
+    display: none;
+    position: absolute;
+    background-color:rgb(249, 242, 213);
+    font-size:large;
+    text-decoration: double underline;
+    font-weight: bold;
+    text-decoration-color: rgb(10, 31, 39);
+    color: rgb(113, 255, 215);
+    padding: 0.3cm;
+}
+.meniu_dropdown_content a 
+{
+    display: block;
+    color: rgb(66, 163, 190);
+    padding: 0.7cm;
+}
+.meniu_dropdown_content a:hover 
+{
+    background-color: rgb(8, 30, 43);
+    color: rgb(113, 255, 215);
+}
+.meniu_dropdown:hover .meniu_dropdown_content 
+{
+    display: block;
+}
+
+/*SALUT ANIMAT*/
+@keyframes animatie
+{
+    0%
+    {
+        color:rgb(10, 31, 39);
+        background-color: rgb(113, 255, 215);
+        border-color: rgb(10, 31, 39);
+        text-decoration: underline;
+    }
+    50%
+    {
+        color: rgb(113, 255, 215);
+        background-color: rgb(10, 31, 39);
+        border-color: rgb(113, 255, 215);
+        text-decoration: underline;
+    }
+    100%
+    {
+        color:rgb(10, 31, 39);
+        background-color: rgb(113, 255, 215);
+        border-color: rgb(10, 31, 39);
+        text-decoration: underline;
+    }
+}
+.salut_animat
+{
+    font-family:'Times New Roman';
+    font-weight: bold;
+    font-size: x-large;
+    border: 0.1cm;
+    border-style:solid;
+    border-radius:15px;
+    width:45em;
+    height:fit-content;
+    margin-left: 6em;
+    margin-top:1em;
+    padding:0.5em;
+    text-align: center;
+    animation: animatie 15s infinite;
+}
+
+/*TEXT MAIN*/
+.container 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2em; 
+    max-width: 100em;
+    margin-left:0; 
+}
+article 
+{
+    border: 0.2em;
+    border-color: white;
+    border-style: solid;
+    padding: 3em;
+    border-radius: 5em;
+    max-width: 50em;
+}
+.sectiune .imagineharta
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.sectiune .imagineharta img
+{
+    margin-right: 1em; 
+    max-width: 40em;
+    height: 30em;
+    border-radius: 5em;
+    margin-bottom: 2em;
+}
+
+/*IMAGINI*/
+#Transilvania .transilvania 
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Transilvania .transilvania img 
+{
+    width: 100%; 
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+#Oltenia .oltenia 
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Oltenia .oltenia img 
+{
+    width: 100%; 
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+#Muntenia .muntenia 
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Muntenia .muntenia img 
+{
+    width: 100%;
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+#Moldova .moldova 
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Moldova .moldova img 
+{
+    width: 100%; 
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+#Bucovina .bucovina 
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Bucovina .bucovina img 
+{
+    width: 100%; 
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+#Dobrogea .dobrogea 
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Dobrogea .dobrogea img 
+{
+    width: 100%; 
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+#Crișana .crisana
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Crișana .crisana img 
+{
+    width: 100%; 
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+#Banat .banat
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Banat .banat img 
+{
+    width: 100%; 
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+#Maramureș .maramures 
+{
+    max-width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+}
+#Maramureș .maramures img 
+{
+    width: 100%; 
+    max-width: 40em; 
+    height: auto; 
+    margin-bottom: 1em;
+}
+
+/*TEXT*/
+.sectiune
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(17, 66, 106);
+    padding: 2em;
+    margin: 1em;
+    border-radius: 2em;
+    border-style: solid;
+    border-color: rgb(249, 242, 213);
+}
+.container
+{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: rgb(249, 242, 213);
+    font-style: italic;
+    font-size: large;
+}
+
+/*RESPONSIVE*/
+/* RESPONSIVE PENTRU TABLETĂ */
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+    header 
+    {
+        width: 100%;
+        margin: auto;
+        padding: 1em;
+        font-size: large;
+    }
+    .salut_animat 
+    {
+        width: 100%;
+        margin: 1em auto;
+        font-size: large;
+    }
+    .container 
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        max-width: 100%;
+        margin: auto;
+    }
+    article 
+    {
+        max-width: 100%;
+        padding: 1em;
+    }
+    .imagineharta img 
+    {
+        max-width: 100%;
+        height: auto;
+        padding: 1em;
+    }
+    .sectiune .imagineharta img 
+    {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+    .transilvania img,
+    .oltenia img,
+    .muntenia img,
+    .moldova img,
+    .bucovina img,
+    .dobrogea img,
+    .crisana img,
+    .banat img,
+    .maramures img 
+    {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+}
+
+/* RESPONSIVE PENTRU DESKTOP */
+@media screen and (min-width: 1025px) 
+{
+    .salut_animat 
+    {
+        width: 45em;
+    }
+    .container 
+    {
+        margin: auto;
+        max-width: 80em;
+    }
+}

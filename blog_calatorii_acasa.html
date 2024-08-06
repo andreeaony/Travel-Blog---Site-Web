@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="ro">
+  <head>
+    <title>Descoperind Romania-ACASĂ</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Onisie Andreea">
+    <meta name="description" content="calatorii in Romania">
+    <meta name="keywords" content="calatorii, Romania, vacanta, relaxare, weekend">
+    <link rel="stylesheet" href="acasa_style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="emblema.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header>
+      <h1>ACASĂ</h1>
+      <nav class="navigatie_pagini">
+        <div class="meniu_dropdown">
+          <button class="buton_meniu"><strong>MENIU</strong></button>
+          <div class="meniu_dropdown_content">
+            <a href="blog_calatorii_acasa.html">ACASĂ</a>
+            <a href="blog_calatorii_anotimpuri.html">ANOTIMPURI</a>
+            <a href="blog_calatorii_regiuni.html">REGIUNI</a>
+            <a href="blog_calatorii_top5.html">TOP 5 CĂLĂTORII</a>
+            </div>
+          </div>
+      </nav>
+   </header>
+
+  <main>
+    <div class="salut_animat"><h2>Bine ați venit pe pagina acasă!</h2></div>
+    <section>
+      <div class="navigare_intro">
+        <div class="logat">
+          <h1>Bine ai venit, <span id="user-name"></span>!</h1>
+          <p>Ești logat în sistem.</p>
+          <button id="logout-button">Logout</button>
+        </div>
+        <h2>Să facem cunoștință!</h2>
+          <p><a href="#pasiune">Despre pasiunea pentru călătorii</a></p>
+          <p><a href="#motive_de_urmarire">De ce ați urmări ceea ce eu postez?</a></p>
+          <p><a href="#detalii">Ce veți găsi pe acest site?</a></p>
+      </div>
+
+      <article id="pasiune">
+        <h3>Despre pasiunea pentru călătorii</h3>
+        <p>Salut! Numele meu este Andreea și, probabil la fel ca și dumneavoastră, îmi doresc din toată inima să descopăr cât mai multe locuri minunate din România.</p>
+        <p>Pentru a vă veni în ajutor, am creat acest blog în speranța că voi reuși să inspir cât mai multă lume.</p>
+        <p>Pe lângă pasiunea pentru călătorii, sunt o mare fană a informaticii și a tehnologiei, combinație care m-a determinat să împărtășesc cu voi, prin intermediul mediului online, câteva locuri de vis pe care le puteți vizita în România pentru o vacanță de-a dreptul reușită.</p>
+      </article>
+
+      <div id="colorAnimation" style="width: 100%; height: 50px;"></div>
+      <article id="motive_de_urmarire">
+        <h2>De ce blogul meu?</h2>
+        <div>
+        <h3>De ce ați urmări ceea ce eu postez?</h3>
+        <p>Ei bine, primul cuvânt care trebuie să vă treacă prin minte atunci când auziți această intrebare este <em>actualitate</em>.</p>
+        <p>Blogul meu conține informații de actualitate, despre călătorii relativ recente realizate în diverse zone ale țării.</p>
+        <p>Un alt cuvânt la care ar trebui să vă gândiți este <em>sinceritate</em>.</p>
+        <p>Nimic nu e mai neplăcut decât să cauți ore întregi pe internet recenzii despre o anumită locație și să găsești idei complet diferite.</p>          <p>Aflați că acest blog este destinat părerilor <strong>100%</strong> sincere, astfel că veți putea conta oricând pe recenziile mele.</p>
+        </div>
+        <div class="nota-container">
+          <p>În continuare, te rog să acorzi o notă experienței tale până în prezent pe site!</p>
+          <input type="number" class="nota-input" min="1" max="10" placeholder="Introduceți nota">
+          <button class="trimite-nota">Trimite nota</button>
+          <p></p>
+        </div>
+      <div class="rezultat-nota"></div>
+      
+        <div class="image1">
+          <img src="harta.jpg" alt="Harta României">
+        </div>
+      </article>
+
+      <p>Pentru că țin la cei ce îmi vizitează blogul, îmi doresc să aveți parte de o experiență inedită pe site. Astfel, dacă culoarea de fundal vă displace, puteți alege dumneavoastră cu ușurință una nouă, selectând butonul de mai jos și alegând culoarea potrivită.</p><input type="color" id="colorPicker"><p></p>
+      <article id="detalii">
+        <h2>Ce veți găsi pe acest site?</h2>
+        <ul>
+          <li>Aceasta este secțiunea <a href="blog_calatorii_acasa.html">ACASĂ</a>, în care veți găsi informațiile generale despre site, despre autoare, precum și motivele principale pentru care ar trebui să luați în considerare urmărirea acestui blog.</li>
+          <li>În secțiunea <a href="blog_calatorii_anotimpuri.html">ANOTIMPURI</a> veți găsi idei de călătorii, realizate și de mine, în funcție de anotimp.</li>
+          <li>În secțiunea <a href="blog_calatorii_regiuni.html">REGIUNI</a> veți găsi idei de călătorii, realizate și de mine, în funcție de regiunile din țară.</li>
+          <li>În secțiunea <a href="blog_calatorii_top5.html">TOP 5 CĂLĂTORII</a> veți găsi cele mai bune 10 călătorii realizate de mine în țară.</li>
+        </ul>
+      </article>
+      <div class="image2">
+        <img src="enjoy.jpg" alt="Final">
+      </div>
+    </section>
+    
+    <div class="formular">
+      <h2 id="formTitle">FORMULAR PREFERINȚE</h2>
+      <p>În formularul de mai jos, vă invit să completați preferințele dumneavoastră în materie de călătorii, pentru a împărtăși detalii despre cele mai frumoase locuri de văzut și pentru a ține cont de ceea ce vă place.</p>
+      <form id="myForm"></form>
+    </div>
+    
+  <aside class="bara_laterala">
+      <h2>CITATUL ZILEI</h2>
+      <p><em>"Zi de zi, nimic nu se schimbă. Însă, atunci când privești în urmă, totul este diferit."</em></p>
+  </aside>
+  </main>
+
+  <footer>
+      <p>&copy; Pagină realizată de Onisie Andreea, Facultatea de Matematică și Informatică - Universitatea București.</p>
+  </footer>
+
+  <script src="profile.js"></script>
+  <script type="text/javascript" src="blog_calatorii.js"></script>
+  </body>  
+</html>

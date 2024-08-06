@@ -1,0 +1,282 @@
+header
+{
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: xx-large;
+    text-decoration: underline;
+    background-color: rgb(250, 103, 182);
+    color: rgb(66, 10, 61);
+    padding: 0.3cm;
+    width: 100%;
+    border: 0.2cm;
+    border-color: rgb(93, 12, 71);
+    border-style: solid;
+}
+
+body
+{
+    font-family: Verdana;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    padding: 0cm;
+    color: rgb(93, 12, 71);
+    background-color: rgb(250, 103, 182);
+    width: fit-content;
+}
+
+footer
+{
+    font-size: x-small;
+    font-style: oblique;
+}
+
+/*MENIU*/
+.buton_meniu 
+{
+    background-color: rgb(159, 17, 93);
+    color: rgb(223, 178, 211);
+    font-size: x-large;
+    font-style: oblique;
+    border: 0.1cm;
+    border-color: rgb(66, 10, 61);
+    border-style: solid;
+    padding-inline: 360px 20px;
+    height:1cm;
+}
+.meniu_dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+.meniu_dropdown_content 
+{
+    display: none;
+    position: absolute;
+    background-color:rgb(104, 27, 68);
+    font-size:large;
+    text-decoration: double underline;
+    font-weight: bold;
+    text-decoration-color: rgb(57, 5, 43);
+    color: rgb(255, 192, 226);
+    padding: 0.3cm;
+}
+.meniu_dropdown_content a 
+{
+    display: block;
+    color: rgb(255, 192, 226);
+    padding: 0.7cm;
+}
+.meniu_dropdown_content a:hover 
+{
+    background-color: rgb(159, 17, 93);
+    color:bisque;
+}
+.meniu_dropdown:hover .meniu_dropdown_content 
+{
+    display: block;
+}
+
+/*SALUT ANIMAT*/
+@keyframes animatie
+{
+    0%
+    {
+        transform: rotate(360deg);
+        color:rgb(93, 12, 71);
+        background-color: rgb(255, 192, 226);
+        border-color: rgb(61, 6, 47);
+        text-decoration: underline;
+    }
+    50%
+    {
+        transform: rotate(360deg);
+        color:rgb(249, 231, 213);
+        background-color: rgb(159, 17, 93);
+        border-color: rgb(89, 23, 58);
+        text-decoration: underline;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        color:rgb(93, 12, 71);
+        background-color: rgb(255, 192, 226);
+        border-color: rgb(61, 6, 47);
+        text-decoration: underline;
+    }
+}
+.salut_animat
+{
+    font-family:'Times New Roman';
+    font-weight: bold;
+    font-size: x-large;
+    border: 0.1cm;
+    border-style:solid;
+    border-radius:1em;
+    width:30em;
+    height:fit-content;
+    margin-left: 13em;
+    margin-top:1em;
+    padding:1em;
+    animation: animatie 15s infinite;
+    text-align: center;
+}
+
+.sectiune
+{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(255, 192, 226);
+    padding:1em;
+    margin:1em;
+}
+.sectiune img
+{
+    max-width: 81em;
+    height:30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:1em; 
+}
+.sectiune #text
+{
+    font-size: xx-large;
+    font-style: italic;
+    color: white;
+}
+main img
+{
+    max-width: 45em;
+    max-height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:1em; 
+    margin-bottom: 0.5em;
+    border-color:black;
+    border-style: solid;
+}
+
+/*TEXT MAIN*/
+main p
+{
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#t5
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(223, 178, 211);
+    font-style:oblique;
+    background-color: rgb(159, 17, 93);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#t4
+{
+    background-color: rgb(61, 6, 47);
+    color:white;
+    padding: 1em;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1em;
+}
+#t3
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(223, 178, 211);
+    font-style:oblique;
+    background-color: rgb(159, 17, 93);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#t2
+{
+    background-color: rgb(61, 6, 47);
+    color:white;
+    padding: 1em;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#t1
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(223, 178, 211);
+    font-style:oblique;
+    background-color: rgb(159, 17, 93);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#t2 .poze 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+#t2 .poze img
+{
+    width: 100%;
+    height: 25em;
+}
+
+/*RESPONSIVE*/
+/*TABLETA RESPONSIVE*/
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+    header 
+    {
+        width: 90%;
+        font-size: large;
+    }
+    .meniu_dropdown_content 
+    {
+        z-index:1;
+        width: 50%; 
+    }
+    .salut_animat 
+    {
+        width: 60%; 
+        margin: 1em auto; 
+    }
+    main p 
+    {
+        width: 100%;
+        text-align: center;
+    }
+    main img 
+    {
+        max-width: 100%;
+        height: auto; 
+    }
+}
+
+/* DESKTOP RESPONSIVE */
+@media screen and (min-width: 1024px) 
+{
+   body
+   {
+        font-size: medium;
+        max-width: 100%;
+   }
+}
